@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "SP Claim Modifier Batch Fixer",
+  "version": "2.1",
+  "description": "Filters the claims scrub list to Action Required, opens each claim in a tab, and fixes the 95 telehealth modifier based on Place of Service. Saves the correction and leaves each claim for manual review and submission.",
+  "permissions": ["tabs", "scripting", "storage"],
+  "host_permissions": ["*://*.simplepractice.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
